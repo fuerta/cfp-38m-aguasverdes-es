@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 38M | Aguas Verdes - My Fuerta Ltd.</title>
+    
+    <meta property="og:title" content="Apartamento 38M - Aguas Verdes Premium">
+    <meta property="og:description" content="Refugio de lujo gestionado en exclusiva por My Fuerta Ltd. en Fuerteventura.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=1200">
+    <meta property="og:url" content="https://38m.aguasverdes.es">
+    
+    <style>
+        /* Modern CSS Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg-dark: #0f1115;
+            --text-light: #f5f6fa;
+            --text-muted: #a4b0be;
+            --accent-gold: #e1b12c;
+            --font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: var(--font-family);
+            color: var(--text-light);
+            background-color: var(--bg-dark);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* --- 1. Cinematic Hero Section --- */
+        main {
+            flex: 1 0 auto;
+            display: flex;
+            /* Align content to the bottom left for an editorial look */
+            align-items: flex-end; 
+            padding: 5rem;
+            
+            /* Dark gradient overlay + sunset/ocean background */
+            background-image: linear-gradient(to top, rgba(15, 17, 21, 1) 0%, rgba(15, 17, 21, 0.4) 50%, rgba(15, 17, 21, 0.1) 100%), url('https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center 30%;
+            background-repeat: no-repeat;
+        }
+        
+        .hero-content {
+            max-width: 600px;
+            /* Left border accent instead of a centered box */
+            border-left: 4px solid var(--accent-gold);
+            padding-left: 2rem;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .unit-label {
+            color: var(--accent-gold);
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        h1 {
+            font-weight: 300;
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+            color: #ffffff;
+        }
+        
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        /* --- 2. The Dark Mode Legal Footer --- */
+        footer {
+            flex-shrink: 0;
+            background-color: var(--bg-dark);
+            padding: 3rem 2rem;
+            border-top: 1px solid #1e222b;
+            text-align: left; /* Left aligned to match the hero section */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .disclaimer-container {
+            max-width: 900px;
+        }
+
+        p.disclaimer-text {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+        
+        p.company-text {
+            font-size: 0.8rem;
+            color: #718093;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Fade-in animation for that premium feel */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            main { padding: 3rem 1.5rem; }
+            h1 { font-size: 2.5rem; }
+            footer { 
+                flex-direction: column; 
+                text-align: center; 
+                padding: 2rem 1.5rem; 
+            }
+            .hero-content { padding-left: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="hero-content">
+            <span class="unit-label">Unidad 38M</span>
+            <h1>Aguas Verdes<br>Premium</h1>
+            <p class="subtitle">Gestión Exclusiva y Privada por My Fuerta Ltd.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="disclaimer-container">
+            <p class="disclaimer-text">
+                Esta página web es propiedad de una empresa privada de gestión vacacional y no tiene ninguna afiliación oficial, legal o representativa con la Comunidad de Propietarios de la Urbanización Aguas Verdes.
+            </p>
+            <p class="company-text">
+                © 2026 My Fuerta Ltd. | Fuerteventura, Islas Canarias.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
